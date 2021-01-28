@@ -11,7 +11,7 @@ phases:
   build:
     commands:
       - eb init -p python-3.7 flask-app --region us-east-1
-      - eb create flask-env
+      - eb deploy flask-env
   post_build:
     commands:
       - echo Build completed on `date`
