@@ -1,0 +1,16 @@
+version: 0.2
+    
+phases:
+  install:
+    runtime-versions:
+      python: 3.8
+    commands:                                                                 
+      - pip install --upgrade pip&&\
+      - pip install -r requirements.txt
+      - pip install awsebcli --upgrade
+  build:
+    commands:
+      - eb deploy
+  post_build:
+    commands:
+      - echo Build completed on `date`
