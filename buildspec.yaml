@@ -10,7 +10,7 @@ phases:
       - pip install awsebcli --upgrade
   build:
     commands:
-      - eb init -p python-3.7 flask-app --region us-east-1
+      - eb init
       - eb deploy flask-env
   post_build:
     commands:
