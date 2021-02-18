@@ -1,17 +1,17 @@
 from flask import Flask
 import pandas as pd
 
-application = Flask(__name__)
+app = Flask(__name__)
 
-@application.route("/")
+@app.route("/")
 def home():
-    return "Hello party people!"
+    return "Hello party people!!"
     
-@application.route("/sun")
+@app.route("/sun")
 def guns_out():
     return "Sun's out guns out"
     
-@application.route("/rugby_scores")
+@app.route("/rugby_scores")
 def scores():
     file = '2020results.csv'
     df = pd.read_csv(file)
@@ -19,4 +19,4 @@ def scores():
     
 
 if __name__ == "__main__":
-    application.run(host='0.0.0.0', port=5000, debug=True)
+    app.run(host='0.0.0.0', port=5000, debug=True)
