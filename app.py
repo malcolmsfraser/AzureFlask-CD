@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 @app.route("/")
 def home():
-    return "Hello party people!! Isn't continuous delivery is cool!? FUCK YES IT WORKS!!!"
+    return "Hello party people!! Isn't continuous delivery is cool!? FUCK YES IT WORKS ON BOOOOOTTTTTHHHH!!!"
     
 @app.route("/sun")
 def guns_out():
